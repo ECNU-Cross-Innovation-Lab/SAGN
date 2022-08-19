@@ -1,5 +1,14 @@
 # SAGN: Semantic Adaptive Graph Network for Skeleton-Based Human Action Recognition
 
+ResearchGate:
+https://www.researchgate.net/publication/354304339_SAGN_Semantic_Adaptive_Graph_Network_for_Skeleton-Based_Human_Action_Recognition
+
+Bilibili:
+https://www.bilibili.com/video/BV1Wu411R7E7?spm_id_from=333.999.0.0
+
+Cite:
+Fu Z W, Liu F, Zhang J H,et al. SAGN: Semantic Adaptive Graph Network for Skeleton-Based Human Action Recognition . Journal of Image and Graphics[C]//ICMR '21: Proceedings of the 2021 International Conference on Multimedia RetrievalAugust 2021 Pages 110–117.https://doi.org/10.1145/3460426.3463633 
+
 ## Introduction
 
 We propose a semantic and adaptive graph network (SAGN) with relatively little computation. Figure~\ref{fig:networks} shows the overall framework. Specifically, we fuse the dynamic feature information (position information, motion information and velocity information) with the bone information (bone information and bone information based on velocity difference), and add the semantic information (joint type and frame index). The whole information fusion is carried out by means of splicing. The fused data is put into the three-layer adaptive GCN for learning, highlighting its adaptability and dynamic learning of graph structure. And the adjacency matrix of graph convolution is obtained by self-learning. The structure learned through the adaptive GCN is spliced with the semantic information of the frame index. In the process of CNN, three layers are designed, which are mainly used for feature extraction of time dimension. In the whole process, we test the model on two public datasets, NTU-RGB+D 60 and NTU-RGB+D 120, and get a good result.
